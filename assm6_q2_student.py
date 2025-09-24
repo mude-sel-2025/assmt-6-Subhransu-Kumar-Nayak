@@ -1,16 +1,24 @@
+# INFERENCE
+# In this code, I understand how to compute and visualize confidence intervals for sample means.
+# The code generates multiple samples from a normal distribution, calculates the sample mean and standard error,
+# and constructs confidence intervals around the sample means. It also tracks how many of these intervals contain the true population mean.
+
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
 def confidence_interval(N_samples=100, sample_size=30, true_mean=67, true_std=10, confidence=0.99):
     """
-    Demonstrates 95% confidence intervals for the mean.
+    Demonstrates 99% confidence intervals for the mean.
     Parameters:
     - N_samples: Number of independent samples (here 40)
     - sample_size: Number of observations per sample
     - true_mean: True population mean
     - true_std: True population standard deviation
-    - confidence: Confidence level (default 0.95)
+    - confidence: Confidence level (default 0.99 for 99% CI)
     """
     
     # WRITE_YOUR_CODE HERE TO COMPUTE THE Z VALUE
