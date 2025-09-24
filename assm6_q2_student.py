@@ -10,15 +10,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 
-def confidence_interval(N_samples=100, sample_size=30, true_mean=67, true_std=10, confidence=0.99):
+def confidence_interval(N_samples=40, sample_size=30, true_mean=77, true_std=3.39, confidence=0.95):
     """
-    Demonstrates 99% confidence intervals for the mean.
+    Demonstrates 95% confidence intervals for the mean.
     Parameters:
     - N_samples: Number of independent samples (here 40)
     - sample_size: Number of observations per sample
     - true_mean: True population mean
     - true_std: True population standard deviation
-    - confidence: Confidence level (default 0.99 for 99% CI)
+    - confidence: Confidence level (default 0.95 for 95% CI)
     """
     
     # WRITE_YOUR_CODE HERE TO COMPUTE THE Z VALUE
@@ -45,7 +45,7 @@ def confidence_interval(N_samples=100, sample_size=30, true_mean=67, true_std=10
         lower = sample_mean - z * sample_se 
         upper = sample_mean + z * sample_se
 
-        print(f"Sample {i+1}: Mean={sample_mean:.2f}, SE={sample_se:.2f}, CI=({lower:.2f}, {upper:.2f})")
+        #print(f"Sample {i+1}: Mean={sample_mean:.2f}, SE={sample_se:.2f}, CI=({lower:.2f}, {upper:.2f})")
         # this code block ends here
 
         # append to CI lists        
