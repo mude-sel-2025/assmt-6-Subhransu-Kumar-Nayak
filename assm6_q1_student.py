@@ -1,3 +1,15 @@
+# INFERENCE
+#so CLT means Suppose i have 10 lakh data points and i take 1000 samples of size 10 each and calculate the mean of each sample. 
+# I will get 1000 means. The distribution of these 1000 means will be approximately follow  normal distribution according to CLT. 
+# The mean of these means will be close to the population mean 
+# the variance will be population variance divided by sample size i.e 10 here.
+# It does not depend what distribution these 10 lkh data points are coming from.
+# This is because of CLT.
+
+
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import uniform, norm, lognorm, gumbel_r
