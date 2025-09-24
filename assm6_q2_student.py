@@ -59,7 +59,7 @@ def confidence_interval(N_samples=40, sample_size=30, true_mean=77, true_std=3.3
     
     # WRITE_YOUR_CODE HERE TO PRINT THE NUMBER OF MISSES AND THE PERCENTAGE
     print(f"Out of {N_samples} intervals, {misses} did NOT contain the true mean.")
-    print(f"This is roughly {(1 - misses / N_samples) * 100:.1f}%, close to the expected 1% for a 99% CI.")
+    print(f"This is roughly {( misses / N_samples) * 100:.1f}%, close to the expected 1% for a 99% CI.")
     # this code block ends here
     
     # Plot the CIs
